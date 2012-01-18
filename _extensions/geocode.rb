@@ -10,7 +10,7 @@ module Jekyll
     alias_method :to_liquid_without_geocoding, :to_liquid
     def to_liquid
       to_liquid_without_geocoding.tap do |data|
-        if data['location']
+        if data['location'] and not data['lat']
           loc = GEO_CACHE[data['location']]
           unless loc
             puts "geocoding address..."

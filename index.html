@@ -9,12 +9,7 @@ zoom: 7
     mapInit();
     {% for post in site.posts %}
       {% if post.lat and post.lng %}
-        var loc = new google.maps.LatLng({{ post.lat }}, {{ post.lng }});
-        var marker = new google.maps.Marker({
-          position: loc,
-          map: window.map,
-          title: ""
-        });
+      placeClub("{{ post.title }}", {{ post.lat }}, {{ post.lng }}, "{{ post.location }}", "{{ post.url }}");
       {% endif %}
     {% endfor %}
   });

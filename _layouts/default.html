@@ -40,13 +40,23 @@
         };
         window.map = new google.maps.Map(document.getElementById("map_canvas"),
           myOptions);
+        window.infowin = new google.maps.InfoWindow();
         if(marker) {
-          new google.maps.Marker({
-            position: loc,
-            map: window.map,
-            title: ""
-          });
+          placeClub("{{ page.title }}", {{ page.lat }}, {{ page.lng }}, "{{ page.location }}", "{{ page.url }}");
         }
+      }
+      function placeClub(name, lat, lng, location, url) {
+        var loc = new google.maps.LatLng(lat, lng);
+        var marker = new google.maps.Marker({
+          position: loc,
+          map: window.map,
+          title: name
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+          infowin.close()
+          infowin.setContent('<p><strong><a href="' + url + '">' + name + '</a></strong></p</p><p>' + location + '</p>');
+          infowin.open(window.map, marker);
+        });
       }
     </script>
 
