@@ -18,10 +18,15 @@ layout: default
       <p>
         {{ page.schedule }}
       </p>
-      <p>
-        {{ page.location }}
-      </p>
     </div>
+
+    <p>
+      {{ page.location }}
+    </p>
+
+    {% if page.contact %}
+      <p>Contact: {{ page.contact }}</p>
+    {% endif %}
 
     {{ page.content }}
   </div>
