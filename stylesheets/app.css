@@ -16,3 +16,9 @@ table.full {
 #map_canvas img {
   max-width: none;
 }
+
+footer {
+  margin-top: 50px;
+  padding: 25px 0;
+  border-top: 1px solid #ccc;
+}
