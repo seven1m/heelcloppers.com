@@ -10,9 +10,17 @@ layout: default
   <div class="eight columns">
     <h1>{{ page.title }}</h1>
 
-    <div class="caller">
-      {% unless page.caller contains 'Caller' %}Caller{% if page.caller contains '&amp;' %}s{% endif %}:{% endunless %}
-      {{ page.caller }}
+    <div class="club-info">
+      <p>
+        {% unless page.caller contains 'Caller' %}Caller{% if page.caller contains '&amp;' %}s{% endif %}:{% endunless %}
+        {{ page.caller }}
+      </p>
+      <p>
+        {{ page.schedule }}
+      </p>
+      <p>
+        {{ page.location }}
+      </p>
     </div>
 
     {{ page.content }}

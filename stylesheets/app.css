@@ -8,6 +8,7 @@ table.full {
   width: 100%;
 }
 
-.caller {
+.club-info p {
   font-size: 20pt;
+  line-height: 1.2em;
 }
