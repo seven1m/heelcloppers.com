@@ -5,8 +5,8 @@ title: Do-Si-Do (Chanute)
 mainstream: yes
 plus: yes
 advanced: no
-hearassist: no
 rounds: no
+hearassist: no
 schedule: 2nd &amp; 4th Saturday, 8:00 PM
 location: Central Park Pavilion, 101 S. Forrest, Chanute, KS
 caller: Guest Callers

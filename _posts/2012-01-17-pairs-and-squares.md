@@ -1,16 +1,16 @@
 ---
 
 layout: club
-title: Memorial Squares
+title: Pairs and Squares
 mainstream: yes
 plus: yes
 advanced: no
 rounds: no
 hearassist: yes
-schedule: every other Friday, 7:30 PM
+schedule: 2nd &amp; 4th Saturday, 7:30 PM
 location: George Horn Hall, 8310 E. 15th St., Tulsa, OK
-caller: Tommy Lee
-contact: (918) 272-3742
+caller: Guest Callers
+contact: (918) 742-6485
 
 ---
 
