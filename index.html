@@ -1,227 +1,68 @@
-<!DOCTYPE html>
+---
+layout: default
+lat: 36.112917
+lng: -95.896339
+zoom: 10
+---
+<script type="text/javascript">
+  $(function() {
+    mapInit();
+    {% for post in site.posts %}
+      {% if post.lat and post.lng %}
+        var loc = new google.maps.LatLng({{ post.lat }}, {{ post.lng }});
+        var marker = new google.maps.Marker({
+          position: loc,
+          map: window.map,
+          title: ""
+        });
+      {% endif %}
+    {% endfor %}
+  });
+</script>
 
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8" />
+<div class="row">
+  <div id="map_canvas"></div>
+</div>
 
-    <!-- Set the viewport width to device width for mobile -->
-    <meta name="viewport" content="width=device-width" />
+<div class="row">
+  <div class="eight columns">
+    <h3>Local Clubs</h3>
 
-    <title>HeelCloppers.com - Square Dance Club Locator for Tulsa, OK</title>
+    <table class="full">
+      <thead>
+        <tr>
+          <th>Club</th>
+          <th>Schedule</th>
+          <th>M</th>
+          <th>P</th>
+          <th>A</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for post in site.posts reversed %}
+          <tr>
+            <td><a href="{{ post.url }}">{{ post.title }}</a></td>
+            <td>{{ post.schedule }}</td>
+            <td>{% if post.mainstream %}<img src="images/check.png" alt="Mainstream"/>{% endif %}</td>
+            <td>{% if post.plus       %}<img src="images/check.png" alt="Plus"/>      {% endif %}</td>
+            <td>{% if post.advanced   %}<img src="images/check.png" alt="Advanced"/>  {% endif %}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
 
-    <!-- Included CSS Files -->
-    <link rel="stylesheet" href="stylesheets/foundation.css">
-    <link rel="stylesheet" href="stylesheets/app.css">
+  </div>
 
-    <!--[if lt IE 9]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
+  <div class="four columns">			
+    <h4>Getting Started</h4>
+    <p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
 
-
-    <!-- IE Fix for HTML5 Tags -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
-    <script type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?sensor=true">
-    </script>
-    <script type="text/javascript">
-      $(function() {
-        var myOptions = {
-          center: new google.maps.LatLng(36.112917, -95.896339),
-          zoom: 10,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("map_canvas"),
-          myOptions);
-      });
-    </script>
-
-  </head>
-  <body>
-
-    <!-- container -->
-    <div class="container">
-
-      <div class="row">
-        <div class="twelve columns">
-          <h2>HeelCloppers.com</h2>
-          <p>Square Dance Club Locator for Tulsa, OK</p>
-          <hr />
-        </div>
-      </div>
-
-      <div class="row">
-        <div id="map_canvas"></div>
-      </div>
-
-      <div class="row">
-        <div class="eight columns">
-          <h3>Local Clubs</h3>
-
-          <table>
-            <thead>
-              <tr>
-                <th>Club</th>
-                <th>Mainstream</th>
-                <th>Plus</th>
-                <th>Advanced</th>
-                <th>Schedule</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Ark-Oma Whirl-Aways</td>
-                <td><img src="images/check.png" alt="Mainstream"/></td>
-                <td><img src="images/check.png" alt="Plus"/></td>
-                <td></td>
-                <td>1st &amp; 3rd Friday, 7:30 PM</td>
-              </tr>
-              <tr>
-                <td>Bartlesville Boot Scooters</td>
-                <td><img src="images/check.png" alt="Mainstream"/></td>
-                <td><img src="images/check.png" alt="Plus"/></td>
-                <td></td>
-                <td>3rd Saturday, 7:30 PM</td>
-              </tr>
-              <tr>
-                <td>Castaways</td>
-                <td></td>
-                <td></td>
-                <td><img src="images/check.png" alt="Advanced"/></td>
-                <td>1st &amp; 3rd Sunday, 7:00 PM</td>
-              </tr>
-              <tr>
-                <td>Do-Si-Do (Chanute)</td>
-                <td><img src="images/check.png" alt="Mainstream"/></td>
-                <td><img src="images/check.png" alt="Plus"/></td>
-                <td></td>
-                <td>2nd &amp; 4th Saturday, 8:00 PM</td>
-              </tr>
-              <tr>
-                <td>Do-Si-Do (Tulsa)</td>
-                <td></td>
-                <td><img src="images/check.png" alt="Plus"/></td>
-                <td></td>
-                <td>1st &amp; 3rd Wednesday, 7:30 PM</td>
-              </tr>
-              <tr>
-                <td>Green Country Squares of Grove</td>
-                <td><img src="images/check.png" alt="Mainstream"/></td>
-                <td><img src="images/check.png" alt="Plus"/></td>
-                <td></td>
-                <td>2nd &amp; 4th Saturday, 7:30 PM</td>
-              </tr>
-              <tr>
-                <td>Kuntry Kuzzins</td>
-                <td><img src="images/check.png" alt="Mainstream"/></td>
-                <td><img src="images/check.png" alt="Plus"/></td>
-                <td></td>
-                <td>2nd &amp; 4th Saturday, 7:30 PM</td>
-              </tr>
-              <tr>
-                <td>Lost Creek Promenaders</td>
-                <td><img src="images/check.png" alt="Mainstream"/></td>
-                <td><img src="images/check.png" alt="Plus"/></td>
-                <td></td>
-                <td>1st &amp; 3rd Thursday, 7:30 PM</td>
-              </tr>
-            </tbody>
-          </table>
-          <!--
-                LOST CREEK PROMENADERS  - (M/P) - Neosho Senior Center, 1017 Carl Sweeney Parkway, Neosho, MO; 1st & 3rd Thursday; 7:30 PM; (417) 624-9837; Johnny Eubanks and Guest Callers
-
-                 MEMORIAL SQUARES - (M/P/H) - George Horn Hall, 8310 E. 15th St., Tulsa, OK; Every other Friday; 7:30 PM; (918) 272-3742; Tommy Lee, Caller
-
-                 MUSKOGEE SWINGERS - (M/P/H) - Hatbox Recreation Center, 540 S. 40th St., Muskogee, OK; 1st & 3rd Friday; 8:00 PM; June, July & August dances are on the 3rd Friday; (918) 478-4571; Corbett Davidson & Jacque Reid, Callers
-
-                 MUSKOGEE TWIRLERS - (M/P) - Hatbox Recreation Center, 540 S. 40th St., Muskogee, OK; 2nd & 4th Friday;  7:30 PM; (918) 682-0043;   & Larry Conner, Callers
-                 
-                 PAIRS AND SQUARES - (M/P/H) - George Horn Hall, 8310 E. 15th St., Tulsa, OK; 2nd & 4th Saturday; 7:30 PM; (918) 742-6485; Guest Callers;   web site  
-                WWW.PAIRSANDSQUARES.NET
-
-                PROMENADE CLUB - (M/P/H) - Eisenhower School, 501 Spruce St. (South door), Independence, KS; 1st & 3rd Friday; 7:30-10:00 PM; Home (620) 421-5822 Cell 332-9239; Richard Verge/B. Main, Callers
-
-                 RECYCLES - (M/P/H) - George Horn Hall, 8310 E. 15th Street, Tulsa, OK;  every other Thursday, year round; 7:30 PM; (918) 272-3113; Monty Hackler, Mike McHenry, Bob Rollins, Callers; web site    www.recyclessquaredance.com
-                          
-                RIDGE ROCKERS - (M/P) - Pea Ridge Elementary School Cafeteria, 1536 North Davis Street, Pea Ridge, AR; 2nd & 4th Friday; 7:30-10:00 PM; 479-619-9245; Grant Roth, Caller
-
-                RUSHING STARS - (M/P/H) - Central Park Recreation Center, 1028 E. 6th Street, Tulsa, OK; every Wednesday, year round; 1:00 PM; (918) 245-9209; Mike McHenry, Mike Burgess, Callers
-
-                 SAND SPRINGS PEPPER STEPPERS - (M/P/H) - Sand Springs Church Of God, 4th & N. Wilson St., Sand Springs, OK; 2nd & 4th Friday, year round; Dance 8:00 PM; (918) 243-7813; Steve Estep/Bill Burcham Callers; web site  www.sspeppersteppers.com
-
-                 SINGLE SQUARES - (M/P/H) - George Horn Hall, 8310 E. 15th St., Tulsa, OK;  every Monday, year round; 7:30 PM; (918) 266-2983;  , Lee Main, Caller
-
-                  SPECK-TACULARS - (M/P/H) - Memorial Drive Community Center, 8310 E. 15th St., Tulsa, OK; Every other Saturday; 7:30 PM; (918) 224-6903; Doyle Hathcock, Caller
-
-                 TEACUP CHAINS PLUS - (P/H) Wagoner Community Bldg., Jefferson & Cherokee, Wagoner, OK; 2nd Tuesday, year round; Workshop 7:30, Dance 8:00 PM; (918) 457-0141; Shane Greer & Guest Callers
-
-                TULSA CROSSFIRES - (P/H) Hill's Hall, 4917 E. Admiral Blvd., Tulsa, OK; 2nd & 4th Sunday, year round; 7:00 PM; Lee Main, Caller; (918) 449-9425
-
-                 TWILIGHT TWISTERS - (M/P/H) - Wagoner Community Bldg., Jefferson & Cherokee, Wagoner, OK; 4th Saturday, year round; 8:00 PM; (918) 627-4539; Shane Greer, Caller
-
-                 WESTERN TWIRLERS - (M/P) - Joplin Square Dance Center, 1801 W. 2nd St., Joplin, MO; 1st, 3rd & 5th Saturday; 7:00 PM; (417) 649-7828; Guest Callers; web site www.squaredancemissouri.com
-
-                 WHEEL AROUND SQUARES - (M/P/R/H) - Joplin Square Dance Center, 1801 W. 2nd St., Joplin, MO; every Thursday; 8:00 PM; (417) 782-0158; Mary Castleberry, Caller
-
-                WILL ROGERS SQUARES -(M/P) - American Legion Post # 141, 2141 N. Hwy 88, Claremore, OK; (about 1/2 mile north of the intersection of Will Rogers Blvd & Blue Starr Drive); 1st & 3rd Tuesday; year round; 7:30 - 9:30 PM; (918) 520-7890; Lee Main & Cecil Williams Callers
-                -->
-
-          <h3>Tabs</h3>
-          <dl class="tabs">
-            <dd><a href="#simple1" class="active">Simple Tab 1</a></dd>
-            <dd><a href="#simple2">Simple Tab 2</a></dd>
-            <dd><a href="#simple3">Simple Tab 3</a></dd>
-          </dl>
-
-          <ul class="tabs-content">
-            <li class="active" id="simple1Tab">This is simple tab 1's content. Pretty neat, huh?</li>
-            <li id="simple2Tab">This is simple tab 2's content. Now you see it!</li>
-            <li id="simple3Tab">This is simple tab 3's content. It's, you know...okay.</li>
-          </ul>
-
-          <h3>Buttons</h3>
-
-          <p><a href="#" class="small blue button">Small Blue Button</a></p>
-          <p><a href="#" class="blue button">Medium Blue Button</a></p>
-          <p><a href="#" class="large blue button">Large Blue Button</a></p>
-
-          <p><a href="#" class="nice radius small blue button">Nice Blue Button</a></p>
-          <p><a href="#" class="nice radius blue button">Nice Blue Button</a></p>
-          <p><a href="#" class="nice radius large blue button">Nice Blue Button</a></p>
-
-        </div>
-
-        <div class="four columns">			
-          <h4>Getting Started</h4>
-          <p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-
-          <h4>Other Resources</h4>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <ul class="disc">
-            <li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
-            <li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
-            <li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-    <!-- container -->
-
-
-
-
-    <!-- Included JS Files -->
-    <script src="javascripts/foundation.js"></script>
-    <script src="javascripts/app.js"></script>
-
-  </body>
-</html>
+    <h4>Other Resources</h4>
+    <p>Once you've exhausted the fun in this document, you should check out:</p>
+    <ul class="disc">
+      <li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
+      <li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
+      <li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
+    </ul>
+  </div>
+</div>

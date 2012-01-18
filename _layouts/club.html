@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="row">
+  <div id="map_canvas"></div>
+</div>
+
+<div class="row">
+  <div class="eight columns">
+    <h1>{{ page.title }}</h1>
+
+    <div class="caller">
+      {% unless page.caller contains 'Caller' %}Caller{% if page.caller contains '&amp;' %}s{% endif %}:{% endunless %}
+      {{ page.caller }}
+    </div>
+
+    {{ page.content }}
+  </div>
+  <div class="four columns">
+    <table class="full">
+      <tr>
+        <td>Mainstream:</td>
+        <td>{% if page.mainstream %}<img src="/images/check.png" alt="Mainstream"/>{% endif %}</td>
+      </tr>
+      <tr>
+        <td>Plus:</td>
+        <td>{% if page.plus %}<img src="/images/check.png" alt="Plus"/>{% endif %}</td>
+      </tr>
+      <tr>
+        <td>Advanced:</td>
+        <td>{% if page.advanced %}<img src="/images/check.png" alt="Advanced"/>{% endif %}</td>
+      </tr>
+      <tr>
+        <td>Rounds</td>
+        <td>{% if page.rounds %}<img src="/images/check.png" alt="Rounds"/>{% endif %}</td>
+      </tr>
+      <tr>
+        <td>Hearing Assist:</td>
+        <td>{% if page.hearassist %}<img src="/images/check.png" alt="Equiped with Hearing assist device."/>{% endif %}</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<script type="text/javascript">$(function() { mapInit(true) });</script>
