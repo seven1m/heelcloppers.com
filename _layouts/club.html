@@ -22,7 +22,7 @@ layout: default
     </div>
 
     <p>
-      {{ page.location }}
+      <a href="http://maps.google.com/maps?q={{ page.location }}" id="location-link">{{ page.location }}</a>
     </p>
 
     {% if page.contact %}
@@ -66,5 +66,6 @@ layout: default
                location: "{{ page.location }}",
                url:      "{{ page.url }}",
                schedule: "{{ page.schedule }}"});
+    $('#location-link').attr('href', 'http://maps.google.com/maps?q=' + encodeURIComponent("{{ page.location }}"));
   });
 </script>
