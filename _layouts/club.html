@@ -57,4 +57,14 @@ layout: default
   </div>
 </div>
 
-<script type="text/javascript">$(function() { mapInit(true) });</script>
+<script type="text/javascript">
+  $(function() {
+    mapInit({{ page.lat }}, {{ page.lng }}, 10);
+    placeClub({name:     "{{ page.title }}",
+               lat:       {{ page.lat }},
+               lng:       {{ page.lng }},
+               location: "{{ page.location }}",
+               url:      "{{ page.url }}",
+               schedule: "{{ page.schedule }}"});
+  });
+</script>

@@ -37,35 +37,6 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
-    <script type="text/javascript">
-      function mapInit(marker) {
-        var loc = new google.maps.LatLng({{ page.lat }}, {{ page.lng }});
-        var myOptions = {
-          center: loc,
-          zoom: {% if page.zoom %}{{ page.zoom }}{% else %}10{% endif %},
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        window.map = new google.maps.Map(document.getElementById("map_canvas"),
-          myOptions);
-        window.infowin = new google.maps.InfoWindow();
-        if(marker) {
-          placeClub("{{ page.title }}", {{ page.lat }}, {{ page.lng }}, "{{ page.location }}", "{{ page.url }}");
-        }
-      }
-      function placeClub(name, lat, lng, location, url) {
-        var loc = new google.maps.LatLng(lat, lng);
-        var marker = new google.maps.Marker({
-          position: loc,
-          map: window.map,
-          title: name
-        });
-        google.maps.event.addListener(marker, 'click', function() {
-          infowin.close()
-          infowin.setContent('<p><strong><a href="' + url + '">' + name + '</a></strong></p</p><p>' + location + '</p>');
-          infowin.open(window.map, marker);
-        });
-      }
-    </script>
 
   </head>
   <body>
