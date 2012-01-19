@@ -1,19 +1,18 @@
 ---
 layout: default
-lat: 36.812917
-lng: -94.896339
 ---
 <script type="text/javascript">
   $(function() {
-    mapInit({{ page.lat }}, {{ page.lng }}, 7);
+    mapInit(37.812917, -97.896339, 7);
     {% for post in site.posts %}
       {% if post.lat and post.lng %}
-      placeClub({name:     "{{ post.title }}",
-                 lat:       {{ post.lat }},
-                 lng:       {{ post.lng }},
-                 location: "{{ post.location }}",
-                 url:      "{{ post.url }}",
-                 schedule: "{{ post.schedule }}"});
+        placeClub({name:     "{{ post.title }}",
+                   lat:       {{ post.lat }},
+                   lng:       {{ post.lng }},
+                   location: "{{ post.location }}",
+                   url:      "{{ post.url }}",
+                   schedule: "{{ post.schedule }}"});
+        fitMap();
       {% endif %}
     {% endfor %}
   });

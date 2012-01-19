@@ -8,6 +8,7 @@ function mapInit(lat, lng, zoom) {
   window.map = new google.maps.Map(document.getElementById("map_canvas"),
     myOptions);
   window.infowin = new google.maps.InfoWindow();
+  window.mapbounds = new google.maps.LatLngBounds();
 }
 
 function placeClub(club) {
@@ -22,4 +23,9 @@ function placeClub(club) {
     infowin.setContent('<p><strong><a href="' + club.url + '">' + club.name + '</a></strong></p</p><p>' + club.location + '</p><p>' + club.schedule + '</p>');
     infowin.open(window.map, marker);
   });
+  mapbounds.extend(loc);
+}
+
+function fitMap() {
+  map.fitBounds(mapbounds);
 }
