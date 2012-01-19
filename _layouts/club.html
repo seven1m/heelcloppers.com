@@ -29,6 +29,10 @@ layout: default
       <p>Contact: {{ page.contact }}</p>
     {% endif %}
 
+    {% if page.website %}
+      <p><a href="{{ page.website }}">Website</a></p>
+    {% endif %}
+
     {{ page.content }}
   </div>
   <div class="four columns">
