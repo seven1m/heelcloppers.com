@@ -63,13 +63,14 @@ layout: default
 
 <script type="text/javascript">
   $(function() {
-    mapInit({{ page.lat }}, {{ page.lng }}, 10);
+    mapInit({{ page.lat }}, {{ page.lng }}, 12);
     placeClub({name:     "{{ page.title }}",
                lat:       {{ page.lat }},
                lng:       {{ page.lng }},
                location: "{{ page.location }}",
                url:      "{{ page.url }}",
                schedule: "{{ page.schedule }}"});
+    drawMapMarkers();
     $('#location-link').attr('href', 'http://maps.google.com/maps?q=' + encodeURIComponent("{{ page.location }}"));
   });
 </script>

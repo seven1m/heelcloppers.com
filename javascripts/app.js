@@ -21,7 +21,7 @@ function placeClub(club) {
   clubsByLocation[club.location].push(club);
 }
 
-function drawMapMarkers() {
+function drawMapMarkers(fit) {
   var mapbounds = new google.maps.LatLngBounds();
   for(var i=0; i<clubLocations.length; i++) {
     var location = clubLocations[i];
@@ -36,7 +36,7 @@ function drawMapMarkers() {
     buildMarker(pin, names.join(', '), '<p>' + location + '</p>' + infos.join(''));
     mapbounds.extend(pin);
   };
-  map.fitBounds(mapbounds);
+  if(fit) map.fitBounds(mapbounds);
 }
 
 function buildMarker(pin, title, content) {
