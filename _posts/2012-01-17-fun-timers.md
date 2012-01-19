@@ -10,7 +10,7 @@ hearassist: no
 schedule: 2nd &amp; 4th Tuesday, 8:00 PM
 location: MWC Senior Center, 8251 E Reno, Midwest City, OK
 caller: Henry Isreal
-contact: 
+contact: (405) 641-0305
 website: 
 
 

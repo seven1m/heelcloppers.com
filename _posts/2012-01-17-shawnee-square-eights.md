@@ -10,7 +10,7 @@ hearassist: no
 schedule: 2nd &amp; 4th Saturday, 8:00 PM
 location: Shawnee Senior Citizens Center, 10th &amp; Bell, Shawnee, OK
 caller: Jim Woolsey
-contact: 
+contact: (405) 691-1251
 website: 
 
 

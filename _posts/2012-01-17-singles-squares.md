@@ -10,7 +10,7 @@ hearassist: no
 schedule: 1st &amp; 3rd Friday, 8:00 PM
 location: Good Shepherd Lutheran Church, 700 N. Air Depot, Midwest City, OK
 caller: Jeff Holley
-contact: 
+contact: (405) 969-2170
 website: http://squaredancing.com/singlesquares
 
 

@@ -10,7 +10,7 @@ hearassist: no
 schedule: 2nd &amp; 4th Saturday, 8:00 PM
 location: Square Dance Cabin, 601 N Pine St., Guthrie, OK
 caller: Lawrence Biggs
-contact: 
+contact: (405) 282-1296
 website: 
 
 

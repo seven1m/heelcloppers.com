@@ -10,7 +10,7 @@ hearassist: no
 schedule: 1st &amp; 3rd Saturday, 8:00 PM
 location: Peace Lutheran Church, 2600 E Danforth, Edmond, OK
 caller: Bobby Willis
-contact: 
+contact: (405) 802-1712
 website: http://teacupchains.com/
 
 
