@@ -6,7 +6,7 @@ require 'time'
 require 'erb'
 
 OUT_PATH = File.expand_path('../../_posts', __FILE__)
-DATE = Date.today.strftime('%Y-%m-%d')
+DATE = '2012-01-17'
 FORCE = ARGV.delete('-f')
 TEMPLATE = <<-END
 ---
