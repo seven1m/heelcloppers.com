@@ -8,24 +8,46 @@ function mapInit(lat, lng, zoom) {
   window.map = new google.maps.Map(document.getElementById("map_canvas"),
     myOptions);
   window.infowin = new google.maps.InfoWindow();
-  window.mapbounds = new google.maps.LatLngBounds();
 }
 
+clubLocations = [];
+clubsByLocation = {};
+
 function placeClub(club) {
-  var loc = new google.maps.LatLng(club.lat, club.lng);
+  if(!clubsByLocation[club.location]) {
+    clubsByLocation[club.location] = [];
+    clubLocations.push(club.location);
+  }
+  clubsByLocation[club.location].push(club);
+}
+
+function drawMapMarkers() {
+  var mapbounds = new google.maps.LatLngBounds();
+  for(var i=0; i<clubLocations.length; i++) {
+    var location = clubLocations[i];
+    var clubs = clubsByLocation[location];
+    var pin = new google.maps.LatLng(clubs[0].lat, clubs[0].lng);
+    var names = [];
+    var infos = [];
+    for(var j=0; j<clubs.length; j++) {
+      names.push(clubs[j].name);
+      infos.push('<p><strong><a href="' + clubs[j].url + '">' + clubs[j].name + '</a></strong><br/>' + clubs[j].schedule + '</p>');
+    }
+    buildMarker(pin, names.join(', '), '<p>' + location + '</p>' + infos.join(''));
+    mapbounds.extend(pin);
+  };
+  map.fitBounds(mapbounds);
+}
+
+function buildMarker(pin, title, content) {
   var marker = new google.maps.Marker({
-    position: loc,
-    map: window.map,
-    title: club.name
+    position: pin,
+    map: map,
+    title: title
   });
   google.maps.event.addListener(marker, 'click', function() {
     infowin.close()
-    infowin.setContent('<p><strong><a href="' + club.url + '">' + club.name + '</a></strong></p</p><p>' + club.location + '</p><p>' + club.schedule + '</p>');
-    infowin.open(window.map, marker);
+    infowin.setContent(content);
+    infowin.open(map, marker);
   });
-  mapbounds.extend(loc);
-}
-
-function fitMap() {
-  map.fitBounds(mapbounds);
 }

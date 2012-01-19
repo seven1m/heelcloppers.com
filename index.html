@@ -4,7 +4,7 @@ layout: default
 <script type="text/javascript">
   $(function() {
     mapInit(37.812917, -97.896339, 7);
-    {% for post in site.posts %}
+    {% for post in site.posts reversed %}
       {% if post.lat and post.lng %}
         placeClub({name:     "{{ post.title }}",
                    lat:       {{ post.lat }},
@@ -12,9 +12,9 @@ layout: default
                    location: "{{ post.location }}",
                    url:      "{{ post.url }}",
                    schedule: "{{ post.schedule }}"});
-        fitMap();
       {% endif %}
     {% endfor %}
+    drawMapMarkers();
   });
 </script>
 
