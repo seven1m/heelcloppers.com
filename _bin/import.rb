@@ -17,7 +17,6 @@ mainstream: <%= club['M'] %>
 plus: <%= club['P'] %>
 advanced: <%= club['A'] %>
 rounds: <%= club['R'] %>
-hearassist: <%= club['H'] %>
 schedule: <%= club['Schedule'] %><% if club['Time'] %>,<%= Time.parse(club['Time']).strftime(' %I:%M %p').sub(/^ 0/, ' ') %><% end %>
 location: <%= club['Location'] %>
 caller: <%= club['Caller'] %>

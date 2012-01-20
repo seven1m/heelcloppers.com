@@ -6,7 +6,6 @@ mainstream: yes
 plus: yes
 advanced: no
 rounds: no
-hearassist: no
 schedule: every Sunday, 2:30 PM
 location: American Legion, Washington &amp; 10th Street, Harper, KS
 caller: 

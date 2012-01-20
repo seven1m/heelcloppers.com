@@ -6,7 +6,6 @@ mainstream: yes
 plus: yes
 advanced: no
 rounds: no
-hearassist: yes
 schedule: 1st &amp; 3rd Friday, 7:30 PM
 location: Eisenhower School, 501 Spruce St., Independence, KS
 caller: Richard Verge &amp; B. Main

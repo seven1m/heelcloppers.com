@@ -6,7 +6,6 @@ mainstream: yes
 plus: yes
 advanced: no
 rounds: yes
-hearassist: no
 schedule: 2nd &amp; 4th Saturday, 7:30 PM
 location: Grove Community Center, 104 W. 3rd St., Grove, OK
 caller: Guest Callers

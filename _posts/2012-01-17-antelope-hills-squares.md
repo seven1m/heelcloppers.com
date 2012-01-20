@@ -6,7 +6,6 @@ mainstream: yes
 plus: no
 advanced: no
 rounds: no
-hearassist: no
 schedule: 2nd Friday, 8:00 PM
 location: Gym, Durham, OK
 caller: Guest Callers

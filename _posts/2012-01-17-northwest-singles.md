@@ -6,7 +6,6 @@ mainstream: yes
 plus: yes
 advanced: no
 rounds: no
-hearassist: no
 schedule: 3rd Friday, 8:00 PM
 location: Santa Fe Depot, 202 W. Walnut, Enid, OK
 caller: Larry &amp; Donna McClain

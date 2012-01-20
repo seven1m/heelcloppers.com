@@ -6,7 +6,6 @@ mainstream: yes
 plus: yes
 advanced: no
 rounds: no
-hearassist: yes
 schedule: 2nd &amp; 4th Saturday, 7:30 PM
 location: Memorial Community Center, 8310 E. 15th St., Tulsa, OK
 caller: Guest Callers
