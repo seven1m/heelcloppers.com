@@ -2,7 +2,7 @@ require 'uri'
 require 'open-uri'
 require 'json'
 
-GEO_CACHE_PATH = File.expand_path('/tmp/jekyll_geocache.json', __FILE__)
+GEO_CACHE_PATH = File.expand_path('../../_site/locations.json', __FILE__)
 GEO_CACHE = JSON.parse(File.exist?(GEO_CACHE_PATH) ? File.read(GEO_CACHE_PATH) : '{}')
 
 module Jekyll
