@@ -14,11 +14,13 @@ clubLocations = [];
 clubsByLocation = {};
 
 function placeClub(club) {
-  if(!clubsByLocation[club.location]) {
-    clubsByLocation[club.location] = [];
-    clubLocations.push(club.location);
+  addr = club.location + "\n" + club.address;
+  console.log(addr);
+  if(!clubsByLocation[addr]) {
+    clubsByLocation[addr] = [];
+    clubLocations.push(addr);
   }
-  clubsByLocation[club.location].push(club);
+  clubsByLocation[addr].push(club);
 }
 
 function drawMapMarkers(fit) {
@@ -33,7 +35,7 @@ function drawMapMarkers(fit) {
       names.push(clubs[j].name);
       infos.push('<p><strong><a href="' + clubs[j].url + '">' + clubs[j].name + '</a></strong><br/>' + clubs[j].schedule + '</p>');
     }
-    buildMarker(pin, names.join(', '), '<p>' + location + '</p>' + infos.join(''));
+    buildMarker(pin, names.join(', '), '<p>' + location.replace(/\n/, '<br/>') + '</p>' + infos.join(''));
     mapbounds.extend(pin);
   };
   if(fit) map.fitBounds(mapbounds);
