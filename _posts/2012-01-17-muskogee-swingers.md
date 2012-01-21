@@ -7,7 +7,9 @@ plus: yes
 advanced: no
 rounds: no
 schedule: 1st &amp; 3rd Friday, 8:00 PM
-location: Hatbox Recreation Center, 540 S. 40th St., Muskogee, OK
+location: Hatbox Recreation Center
+address: 540 S. 40th St., Muskogee, OK
+directions: 
 caller: Corbett Davidson &amp; Jacque Reid
 contact: (918) 478-4571
 website: 

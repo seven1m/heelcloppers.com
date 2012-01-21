@@ -7,7 +7,9 @@ plus: yes
 advanced: no
 rounds: no
 schedule: 1st &amp; 3rd Saturday, 8:00 PM
-location: Pioneer Room, Woodward, OK
+location: Pioneer Room
+address: Woodward, OK
+directions: 
 caller: Guest Callers
 contact: 
 website: http://www.jim-r.com/woodward.htm

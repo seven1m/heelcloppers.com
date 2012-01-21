@@ -7,7 +7,9 @@ plus: no
 advanced: no
 rounds: no
 schedule: 2nd Friday, 8:00 PM
-location: Gym, Durham, OK
+location: Gym
+address: Durham, OK
+directions: 
 caller: Guest Callers
 contact: (580) 983-2463
 website: 

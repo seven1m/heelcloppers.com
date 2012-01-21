@@ -19,6 +19,8 @@ advanced: <%= club['A'] %>
 rounds: <%= club['R'] %>
 schedule: <%= club['Schedule'] %><% if club['Time'] %>,<%= Time.parse(club['Time']).strftime(' %I:%M %p').sub(/^ 0/, ' ') %><% end %>
 location: <%= club['Location'] %>
+address: <%= club['Address'] %>
+directions: <%= club['Directions'] %>
 caller: <%= club['Caller'] %>
 contact: <%= club['Contact'] %>
 website: <%= club['Website'] %>

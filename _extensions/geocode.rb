@@ -1,4 +1,4 @@
-require 'uri'
+require 'cgi'
 require 'open-uri'
 require 'json'
 
@@ -10,15 +10,16 @@ module Jekyll
     alias_method :to_liquid_without_geocoding, :to_liquid
     def to_liquid
       to_liquid_without_geocoding.tap do |data|
-        if data['location'] and not data['lat']
-          loc = GEO_CACHE[data['location']]
+        addr = data['address'].gsub(/&amp;/, '&') # unencode
+        if addr and not data['lat']
+          loc = GEO_CACHE[addr]
           unless loc
             puts "geocoding address..."
-            result = JSON.parse(open("http://maps.googleapis.com/maps/api/geocode/json?address=#{URI.encode data['location']}&sensor=false").read)
+            result = JSON.parse(open("http://maps.googleapis.com/maps/api/geocode/json?address=#{CGI.escape addr}&sensor=false").read)
             loc = result['results'][0]['geometry']['location'] rescue 'none'
           end
           data.merge!(loc) if loc != 'none'
-          GEO_CACHE[data['location']] = loc
+          GEO_CACHE[addr] = loc
           self.class.update_geo_cache!
         end
       end

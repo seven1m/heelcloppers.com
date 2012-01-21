@@ -22,8 +22,13 @@ layout: default
     </div>
 
     <p>
-      <a href="http://maps.google.com/maps?q={{ page.location }}" id="location-link">{{ page.location }}</a>
+      {% if page.location %}{{ page.location }}<br/>{% endif %}
+      <a href="http://maps.google.com/maps?q={{ page.address }}" id="address-link">{{ page.address }}</a>
     </p>
+
+    {% if page.directions %}
+      <p>{{ page.directions }}</p>
+    {% endif %}
 
     {% if page.contact %}
       <p>Contact: {{ page.contact }}</p>
@@ -67,6 +72,6 @@ layout: default
                url:      "{{ page.url }}",
                schedule: "{{ page.schedule }}"});
     drawMapMarkers();
-    $('#location-link').attr('href', 'http://maps.google.com/maps?q=' + encodeURIComponent("{{ page.location }}"));
+    $('#address-link').attr('href', 'http://maps.google.com/maps?q=' + encodeURIComponent("{{ page.address }}"));
   });
 </script>

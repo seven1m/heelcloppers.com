@@ -7,7 +7,9 @@ plus: no
 advanced: no
 rounds: no
 schedule: 3rd Saturday &amp; 5th Friday, 8:00 PM
-location: 2 Blocks West of COOP, Hyrdo, OK
+location: 2 Blocks West of COOP
+address: Hyrdo, OK
+directions: 
 caller: Guest Callers
 contact: 
 website: 
