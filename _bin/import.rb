@@ -32,7 +32,7 @@ website: <%= club['Website'] %>
 END
 
 CSV.parse(File.read(ARGV.first), :headers => true).each_entry do |club|
-  filename = "#{DATE}-#{club['Name'].scan(/[a-z\-]+/i).join('-').downcase}.md"
+  filename = "#{DATE}-#{club['Name'].scan(/[a-z0-9\-]+/i).join('-').downcase}.md"
   file_path = File.join(OUT_PATH, filename)
   if File.exist?(file_path) and not FORCE
     puts "File #{filename} exists. Use -f to force overwrite."
