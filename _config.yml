@@ -4,3 +4,4 @@ permalink: "/clubs/:title.html"
 pygments: true
 exclude: ['Rakefile', 'README.md', 'config.rb', 'Gemfile', 'Gemfile.lock']
 markdown: rdiscount
+domain: heelcloppers.com
