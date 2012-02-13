@@ -19,16 +19,21 @@ layout: default
   });
 </script>
 
-<div class="row">
-  <p class="show-on-phones"><a href="#list">Skip down to the club list...</a></p>
+<div class="row show-on-phones">
+  <dl class="tabs">
+    <dd><a href="#map" class="active">Club Map</a></dd>
+    <dd><a href="#list">Club List</a></dd>
+    <dd><a href="#about">About</a></dd>
+  </dl>
+</div>
+
+<div class="row" id="map">
   <div id="map_canvas"></div>
 </div>
 
 <div class="row" id="list">
   <div class="eight columns">
     <h3>Oklahoma Dance Clubs</h3>
-
-    <p>This is not yet an exhaustive list &mdash; <a href="mailto:tim@timmorgan.org">Help us make it better!</a></p>
 
     <table class="full">
       <thead>
@@ -55,7 +60,7 @@ layout: default
     <p><img src="/images/publicdomain.png" class="icon"/> This list is public domain &mdash; <a href="https://docs.google.com/spreadsheet/ccc?key=0AniDuk4-exxodEF5TnF1MU1IYlRnaFNGTlhjWTktUVE">You can download it here.</a></p>
   </div>
 
-  <div class="four columns">
+  <div class="four columns" id="about">
     <h4>About Square Dance</h4>
     <p>Square Dance is a challenging, high-energy activity for people of all ages. This 300-year-old folk tradition is also the official dance of nineteen US states, including Oklahoma.</p>
     <a href="/about.html"><img src="images/square_tn.png" style="float:right;margin:-10px 0 10px 10px;"/></a>

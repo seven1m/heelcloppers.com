@@ -53,3 +53,5 @@ function buildMarker(pin, title, content) {
     infowin.open(map, marker);
   });
 }
+
+$('.tabs a').smoothScroll();
