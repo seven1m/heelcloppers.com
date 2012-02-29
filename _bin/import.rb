@@ -4,10 +4,10 @@ require 'csv'
 require 'date'
 require 'time'
 require 'erb'
+require 'fileutils'
 
 OUT_PATH = File.expand_path('../../_posts', __FILE__)
 DATE = '2012-01-17'
-FORCE = ARGV.delete('-f')
 TEMPLATE = <<-END
 ---
 
@@ -34,8 +34,8 @@ END
 CSV.parse(File.read(ARGV.first), :headers => true).each_entry do |club|
   filename = "#{DATE}-#{club['Name'].scan(/[a-z0-9\-]+/i).join('-').downcase}.md"
   file_path = File.join(OUT_PATH, filename)
-  if File.exist?(file_path) and not FORCE
-    puts "File #{filename} exists. Use -f to force overwrite."
+  if club['Status'] == 'inactive'
+    FileUtils.rm(file_path) if File.exist?(file_path)
   else
     puts "#{club['Name']} => #{filename}"
     File.open(file_path, 'w') do |file|
