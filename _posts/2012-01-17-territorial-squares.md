@@ -10,8 +10,8 @@ schedule: 2nd &amp; 4th Saturday, 8:00 PM
 location: Square Dance Cabin
 address: 601 N Pine St., Guthrie, OK
 directions: 
-caller: Lawrence Biggs
-contact: (405) 282-1296
+caller: Andy Turner
+contact: (405) 260-0110
 website: 
 
 
