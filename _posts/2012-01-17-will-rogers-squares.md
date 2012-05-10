@@ -11,7 +11,7 @@ location: American Legion Post 141
 address: 2141 N. Hwy 88, Claremore, OK
 directions: 
 caller: Lee Main &amp; Cecil Williams
-contact: (918) 520-7890
+contact: (918) 694-8546
 website: 
 
 

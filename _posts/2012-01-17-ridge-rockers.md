@@ -11,7 +11,7 @@ location: Pea Ridge Elementary School Cafeteria
 address: 1536 North Davis Street, Pea Ridge, AR
 directions: 
 caller: Grant Roth
-contact: (479) 619-9245
+contact: (479) 531-2043
 website: 
 
 

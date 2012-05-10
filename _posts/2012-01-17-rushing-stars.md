@@ -11,7 +11,7 @@ location: Central Park Recreation Center
 address: 1028 E. 6th Street, Tulsa, OK
 directions: 
 caller: Mike McHenry &amp; Mike Burgess
-contact: (918) 245-9209
+contact: (918) 835-0881, (918) 447-9638
 website: 
 
 

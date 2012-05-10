@@ -11,7 +11,7 @@ location: Hatbox Recreation Center
 address: 540 S. 40th St., Muskogee, OK
 directions: 
 caller: Larry Conner
-contact: (918) 682-0043
+contact: (918) 682-1827
 website: 
 
 
