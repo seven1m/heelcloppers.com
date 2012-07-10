@@ -10,8 +10,8 @@ schedule: 1st &amp; 3rd Saturday, 8:00 PM
 location: Peace Lutheran Church
 address: 2600 E Danforth, Edmond, OK
 directions: 
-caller: Bobby Willis
-contact: (405) 802-1712
+caller: Jeff &amp; Niecy Holley
+contact: (405) 969-2170
 website: http://teacupchains.com/
 
 

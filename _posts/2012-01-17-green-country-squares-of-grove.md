@@ -11,7 +11,7 @@ location: Grove Community Center
 address: 104 W. 3rd St., Grove, OK
 directions: 
 caller: Guest Callers
-contact: (918) 787-5305
+contact: (918) 786-4163
 website: 
 
 
