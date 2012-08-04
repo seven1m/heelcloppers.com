@@ -11,7 +11,7 @@ location: Warr Acres Community Center
 address: 4301 N Ann Arbor, Warr Acres, OK
 directions: 
 caller: Cecil Burton
-contact: (580) 762-4147
+contact: (405) 470-0868
 website: http://swingingrebels.com/
 
 

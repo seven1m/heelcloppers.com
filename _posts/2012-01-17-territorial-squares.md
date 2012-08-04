@@ -11,7 +11,7 @@ location: Square Dance Cabin
 address: 601 N Pine St., Guthrie, OK
 directions: 
 caller: Andy Turner
-contact: (405) 260-0110
+contact: (405) 341-3617
 website: 
 
 

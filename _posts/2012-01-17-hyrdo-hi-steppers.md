@@ -7,8 +7,8 @@ plus: no
 advanced: no
 rounds: no
 schedule: 3rd Saturday &amp; 5th Friday, 8:00 PM
-location: 2 Blocks West of COOP
-address: Hyrdo, OK
+location: Life Fellowship Church Gym
+address: 1709 Lyle Road, Weatherford, OK
 directions: 
 caller: Guest Callers
 contact: 
