@@ -7,7 +7,7 @@ plus: yes
 advanced: no
 rounds: no
 schedule: 2nd &amp; 4th Saturday, 7:30 PM
-location: United Methodist Gym
+location: First Methodist Church Gym
 address: S. College Ave &amp; W. Delaware St, Tahlequah, OK
 directions: 
 caller: Bob Loyd

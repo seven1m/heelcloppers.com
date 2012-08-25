@@ -6,7 +6,7 @@ mainstream: no
 plus: yes
 advanced: no
 rounds: no
-schedule: 2nd &amp; 4th Sunday, 6:30 PM
+schedule: 2nd &amp; 4th Sunday, 7:00 PM
 location: Hill's Hall
 address: 4917 E. Admiral Blvd., Tulsa, OK
 directions: 

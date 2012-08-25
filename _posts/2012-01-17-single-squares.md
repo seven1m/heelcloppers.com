@@ -11,7 +11,7 @@ location: Memorial Community Center
 address: 8310 E. 15th St., Tulsa, OK
 directions: 
 caller: Lee Main
-contact: (918) 266-2983
+contact: (918) 343-4455
 website: 
 
 
