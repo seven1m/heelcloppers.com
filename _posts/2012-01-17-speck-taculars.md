@@ -10,7 +10,7 @@ schedule: every other Saturday, 7:30 PM
 location: Memorial Community Center
 address: 8310 E. 15th St., Tulsa, OK
 directions: 
-caller: Doyle Hathcock
+caller: Lee Main
 contact: (918) 224-6903
 website: 
 
