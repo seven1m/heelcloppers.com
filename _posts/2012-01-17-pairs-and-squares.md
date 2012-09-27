@@ -11,7 +11,7 @@ location: Memorial Community Center
 address: 8310 E. 15th St., Tulsa, OK
 directions: 
 caller: Guest Callers
-contact: (918) 299-2780
+contact: (918) 492-6054
 website: http://www.pairsandsquares.net
 
 
