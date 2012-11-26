@@ -5,7 +5,9 @@ require 'date'
 require 'time'
 require 'erb'
 require 'fileutils'
+require 'open-uri'
 
+CSV_URL = 'https://docs.google.com/spreadsheet/pub?key=0AniDuk4-exxodEF5TnF1MU1IYlRnaFNGTlhjWTktUVE&single=true&gid=0&output=csv'
 OUT_PATH = File.expand_path('../../_posts', __FILE__)
 DATE = '2012-01-17'
 TEMPLATE = <<-END
@@ -31,7 +33,7 @@ website: <%= club['Website'] %>
 
 END
 
-CSV.parse(File.read(ARGV.first), :headers => true).each_entry do |club|
+CSV.parse(open(CSV_URL).read, :headers => true).each_entry do |club|
   filename = "#{DATE}-#{club['Name'].scan(/[a-z0-9\-]+/i).join('-').downcase}.md"
   file_path = File.join(OUT_PATH, filename)
   if club['Status'] == 'inactive'
