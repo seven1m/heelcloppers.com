@@ -58,6 +58,7 @@ clubs = open(URL).read.split('<hr>').map do |club|
       time: time,
       location: location,
       address: address,
+      state: 'AR',
       caller: caller ? caller[1] : nil,
       contacts: contacts
     }
@@ -76,7 +77,7 @@ clubs.each do |info|
 end
 
 CSV.open('ar.csv', 'w') do |csv|
-  csv << %w(Name M P A R Location Address Directions Lat Lng Schedule Time Contact Caller Website Status)
+  csv << %w(Name M P A R Location Address State Directions Lat Lng Schedule Time Contact Caller Website Status)
   clubs.each do |club|
     csv << [
       club[:name],
@@ -86,6 +87,7 @@ CSV.open('ar.csv', 'w') do |csv|
       club[:rounds] ? 'yes' : 'no',
       club[:location],
       club[:address],
+      club[:state],
       nil,
       nil,
       nil,

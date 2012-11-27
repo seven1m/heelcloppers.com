@@ -28,7 +28,8 @@ EXCEPTIONS = {
   'St. Joe Squares' => {
     pre: Proc.new { |d| d.delete_at(1); d },
     schedule: '1st & 3rd Friday',
-    address: '3524 St. Joseph Ave., St. Joseph, MO'
+    address: '3524 St. Joseph Ave., St. Joseph, MO',
+    state: 'MO'
   },
   "Swingin' Singles" => {
     schedule: Proc.new { |s| s.split('day').first + 'day' }
@@ -98,6 +99,7 @@ clubs = open(URL).read.scan(/<div[^>]*>[^<]*<font.*?>([^<]+)/i).map do |club|
       time: time,
       location: location,
       address: address,
+      state: 'KS',
       caller: caller,
       contacts: contacts
     }
@@ -117,7 +119,7 @@ clubs.each do |info|
 end
 
 CSV.open('ks.csv', 'w') do |csv|
-  csv << %w(Name M P A R Location Address Directions Lat Lng Schedule Time Contact Caller Website Status)
+  csv << %w(Name M P A R Location Address State Directions Lat Lng Schedule Time Contact Caller Website Status)
   clubs.each do |club|
     csv << [
       club[:name],
@@ -127,6 +129,7 @@ CSV.open('ks.csv', 'w') do |csv|
       club[:rounds] ? 'yes' : 'no',
       club[:location],
       club[:address],
+      club[:state],
       nil,
       nil,
       nil,
