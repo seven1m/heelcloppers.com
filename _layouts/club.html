@@ -12,10 +12,12 @@ layout: default
     <h1>{{ page.title }}</h1>
 
     <div class="club-info">
-      <p>
-        {% unless page.caller contains 'Caller' %}Caller{% if page.caller contains '&amp;' %}s{% endif %}:{% endunless %}
-        {{ page.caller }}
-      </p>
+      {% if page.caller != nil %}
+        <p>
+          {% unless page.caller contains 'Caller' %}Caller{% if page.caller contains '&amp;' %}s{% endif %}:{% endunless %}
+          {{ page.caller }}
+        </p>
+      {% endif %}
       <p>
         {{ page.schedule }}
       </p>
