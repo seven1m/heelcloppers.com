@@ -8,9 +8,10 @@ require 'fileutils'
 require 'open-uri'
 
 CSV_URLS = [
-  'https://docs.google.com/spreadsheet/pub?key=0AniDuk4-exxodEF5TnF1MU1IYlRnaFNGTlhjWTktUVE&single=true&gid=0&output=csv',
-  'https://docs.google.com/spreadsheet/pub?key=0AniDuk4-exxodEF5TnF1MU1IYlRnaFNGTlhjWTktUVE&single=true&gid=1&output=csv',
-  'https://docs.google.com/spreadsheet/pub?key=0AniDuk4-exxodEF5TnF1MU1IYlRnaFNGTlhjWTktUVE&single=true&gid=2&output=csv'
+  'https://docs.google.com/spreadsheet/pub?key=0AniDuk4-exxodEF5TnF1MU1IYlRnaFNGTlhjWTktUVE&output=csv&single=true&gid=0',
+  'https://docs.google.com/spreadsheet/pub?key=0AniDuk4-exxodEF5TnF1MU1IYlRnaFNGTlhjWTktUVE&output=csv&single=true&gid=1',
+  'https://docs.google.com/spreadsheet/pub?key=0AniDuk4-exxodEF5TnF1MU1IYlRnaFNGTlhjWTktUVE&output=csv&single=true&gid=2',
+  'https://docs.google.com/spreadsheet/pub?key=0AniDuk4-exxodEF5TnF1MU1IYlRnaFNGTlhjWTktUVE&output=csv&single=true&gid=3'
 ]
 OUT_PATH = File.expand_path('../../_posts', __FILE__)
 DATE = '2012-01-17'
