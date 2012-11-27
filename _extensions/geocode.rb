@@ -17,10 +17,10 @@ module Jekyll
             puts "geocoding address... #{addr}"
             result = JSON.parse(open("http://maps.googleapis.com/maps/api/geocode/json?address=#{CGI.escape addr}&sensor=false").read)
             loc = result['results'][0]['geometry']['location'] rescue 'none'
+            GEO_CACHE[addr] = loc
+            self.class.update_geo_cache!
           end
           data.merge!(loc) if loc != 'none'
-          GEO_CACHE[addr] = loc
-          self.class.update_geo_cache!
         end
       end
     end
