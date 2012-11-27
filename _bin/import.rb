@@ -26,6 +26,7 @@ rounds: <%= club['R'] %>
 schedule: <%= club['Schedule'] %><% if club['Time'] %>,<%= Time.parse(club['Time']).strftime(' %I:%M %p').sub(/^ 0/, ' ') %><% end %>
 location: <%= club['Location'] %>
 address: <%= club['Address'] %>
+state: <%= club['State'] %>
 directions: <%= club['Directions'] %>
 caller: <%= club['Caller'] %>
 contact: <%= club['Contact'] %>
@@ -39,7 +40,7 @@ END
 
 CSV_URLS.each do |url|
   CSV.parse(open(url).read, :headers => true).each_entry do |club|
-    filename = "#{DATE}-#{club['Name'].scan(/[a-z0-9\-]+/i).join('-').downcase}.md"
+    filename = "#{DATE}-#{club['Name'].scan(/[a-z0-9\-]+/i).join('-').downcase}-#{club['State'].downcase}.md"
     file_path = File.join(OUT_PATH, filename)
     if club['Status'] == 'inactive'
       FileUtils.rm(file_path) if File.exist?(file_path)
