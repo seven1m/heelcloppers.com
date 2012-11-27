@@ -5,4 +5,4 @@ pygments: true
 exclude: ['Rakefile', 'README.md', 'config.rb', 'Gemfile', 'Gemfile.lock']
 markdown: rdiscount
 domain: heelcloppers.com
-region: Oklahoma and Arkansas
+region: Oklahoma, Kansas and Arkansas
