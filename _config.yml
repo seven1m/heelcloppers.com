@@ -2,7 +2,7 @@
 
 permalink: "/clubs/:title.html"
 pygments: true
-exclude: ['Rakefile', 'README.md', 'config.rb', 'Gemfile', 'Gemfile.lock']
+exclude: ['Rakefile', 'README.md', 'config.rb', 'Gemfile', 'Gemfile.lock', 'jekyll_geocache.json']
 markdown: rdiscount
 domain: heelcloppers.com
-region: Oklahoma, Kansas and Arkansas
+region: Oklahoma, Kansas, Arkansas and Colorado
