@@ -89,6 +89,11 @@ clubs = open(URL).read.scan(/<div[^>]*>[^<]*<font.*?>([^<]+)/i).map do |club|
     address = data[3] + ', ' + data[1] + ', KS'
     caller = nil
     contacts = club[0].scan(/(\d{3})[\) \-]+(\d{3}).(\d{4})/).map { |m| "(#{m[0]}) #{m[1]}-#{m[2]}" }.join(', ')
+    if club[0] =~ /www\.?[a-z0-9\-]+\.(com|org|net|us)/
+      website = 'http://' + $~.to_s
+    else
+      website = nil
+    end
     {
       name: name,
       mainstream: mainstream,
@@ -101,7 +106,8 @@ clubs = open(URL).read.scan(/<div[^>]*>[^<]*<font.*?>([^<]+)/i).map do |club|
       address: address,
       state: 'KS',
       caller: caller,
-      contacts: contacts
+      contacts: contacts,
+      website: website
     }
   end
 end.compact
@@ -136,7 +142,8 @@ CSV.open('ks.csv', 'w') do |csv|
       club[:schedule],
       club[:time],
       club[:contacts],
-      club[:caller]
+      club[:caller],
+      club[:website]
     ]
   end
 end
