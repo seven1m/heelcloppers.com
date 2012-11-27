@@ -39,6 +39,7 @@ layout: default
       <thead>
         <tr>
           <th>Club</th>
+          <th>State</th>
           <th>Schedule</th>
           <th>M</th>
           <th>P</th>
@@ -49,6 +50,7 @@ layout: default
         {% for post in site.posts reversed %}
           <tr>
             <td><a href="{{ post.url }}">{{ post.title }}</a></td>
+            <td>{{ post.state }}</td>
             <td>{{ post.schedule }}</td>
             <td>{% if post.mainstream %}<img src="images/check.png" alt="Mainstream"/>{% endif %}</td>
             <td>{% if post.plus       %}<img src="images/check.png" alt="Plus"/>      {% endif %}</td>
