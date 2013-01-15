@@ -6,7 +6,7 @@ mainstream: yes
 plus: no
 advanced: no
 rounds: no
-schedule: 4th Saturday, 8:00 PM
+schedule: 4th Friday, 8:00 PM
 location: Altus Community Center
 address: 401 Falcon Rd., Altus, OK
 state: OK

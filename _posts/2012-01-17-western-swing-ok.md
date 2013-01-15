@@ -6,7 +6,7 @@ mainstream: yes
 plus: no
 advanced: no
 rounds: no
-schedule: 1st &amp; 5th Saturday, 8:00 PM
+schedule: 1st Saturday, 8:00 PM
 location: Hut
 address: Elk City, OK
 state: OK
