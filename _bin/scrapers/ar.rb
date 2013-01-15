@@ -18,8 +18,13 @@ require 'open-uri'
 require 'csv'
 require 'pp'
 
+names = {}
 clubs = open(URL).read.split('<hr>').map do |club|
   name = /Name.*: ([^<]*)/.match(club)
+  if name
+    next if names[name[1]]
+    names[name[1]] = true
+  end
   if level = /Level.*: ([^<]*)/.match(club)
     mainstream = level[1] =~ /mainstream/i
     plus = level[1] =~ /plus/i

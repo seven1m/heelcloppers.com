@@ -12,7 +12,7 @@ address: 49 Park Road, Heber Springs, AR
 state: AR
 directions: 
 caller: Dave Towry
-contact: (501) 556-5983
+contact: (501) 206-7248
 website: 
 
 

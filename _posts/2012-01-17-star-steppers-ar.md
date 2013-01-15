@@ -6,9 +6,9 @@ mainstream: yes
 plus: no
 advanced: no
 rounds: no
-schedule: every Monday, 6:00 PM
+schedule: every Monday, 6:30 PM
 location: Central Presbyterian Church
-address: 6300 Trinity Drive, Pine Bluff, AR
+address: 6300 Trinity Drive, Pine Bluff, AR, Pine Bluff, AR
 state: AR
 directions: 
 caller: Elgie Goss
