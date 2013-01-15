@@ -1,1 +1,1 @@
-rvm use 1.9.3-p0@heelcloppers --create
+rvm use 1.9.3@heelcloppers --create
