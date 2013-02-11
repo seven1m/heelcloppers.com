@@ -56,10 +56,16 @@ require 'open-uri'
 require 'csv'
 require 'pp'
 
+class String
+  def cleanse
+    gsub(/\xC2|\xA0/, '').gsub(/\xE2\x80(\x99|\x98)/, "'").strip
+  end
+end
+
 clubs = open(URL).read.scan(/<div[^>]*>[^<]*<font.*?>([^<]+)/i).map do |club|
   if club[0] =~ /^[A-Z\.\-\d]{2,}/ and club[0].length > 25
     data = club[0].gsub(/&#8217;|&#8216;/, "'").gsub(/&#160;/, ' ').gsub(/\s+/, ' ').gsub(/&amp;/, '&').split(/,\s*/)
-    name = data[0]
+    name = data[0].cleanse
     rounds = name =~ /\(.*round/i
     clogging = name =~ /\(.*clog/i
     contra = name =~ /\(.*contra/i
@@ -80,13 +86,13 @@ clubs = open(URL).read.scan(/<div[^>]*>[^<]*<font.*?>([^<]+)/i).map do |club|
       schedule = schedule.first
     end
     if schedule
-      schedule = schedule.gsub(/Sun\.?/, 'Sunday').gsub(/Mon\.?/, 'Monday').gsub(/Tues?\.?/, 'Tuesday').gsub(/Wed\.?/, 'Wednesday').gsub(/Thu(rs)?\.?/, 'Thursday').gsub(/Fri\.?/, 'Friday').gsub(/Sat\.?/, 'Saturday').gsub(/&/, ' & ').gsub(/\s+/, ' ').gsub(/Every|Other|First|Second|Third|Fourth/) { |m| m.downcase }.gsub(/\(check calendar.*\)/i, '').strip
+      schedule = schedule.gsub(/Sun\.?/, 'Sunday').gsub(/Mon\.?/, 'Monday').gsub(/Tues?\.?/, 'Tuesday').gsub(/Wed\.?/, 'Wednesday').gsub(/Thu(rs)?\.?/, 'Thursday').gsub(/Fri\.?/, 'Friday').gsub(/Sat\.?/, 'Saturday').gsub(/&/, ' & ').gsub(/\s+/, ' ').gsub(/Every|Other|First|Second|Third|Fourth/) { |m| m.downcase }.gsub(/\(check calendar.*\)/i, '').cleanse
     end
     if time = club[0].scan(/(\d+(:\d+)?\s*(am|pm))/i).map(&:first).first
       time = Time.parse(time).strftime('%H:%M')
     end
-    location = data[2]
-    address = data[3] + ', ' + data[1] + ', KS'
+    location = data[2].cleanse
+    address = (data[3] + ', ' + data[1] + ', KS').cleanse
     caller = nil
     contacts = club[0].scan(/(\d{3})[\) \-]+(\d{3}).(\d{4})/).map { |m| "(#{m[0]}) #{m[1]}-#{m[2]}" }.join(', ')
     if club[0] =~ /www\.?[a-z0-9\-]+\.(com|org|net|us)/

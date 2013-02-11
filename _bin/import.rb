@@ -9,9 +9,9 @@ require 'open-uri'
 
 CSV_URLS = [
   'https://docs.google.com/spreadsheet/pub?key=0AniDuk4-exxodEF5TnF1MU1IYlRnaFNGTlhjWTktUVE&output=csv&single=true&gid=0',
-  'https://docs.google.com/spreadsheet/pub?key=0AniDuk4-exxodEF5TnF1MU1IYlRnaFNGTlhjWTktUVE&output=csv&single=true&gid=1',
-  'https://docs.google.com/spreadsheet/pub?key=0AniDuk4-exxodEF5TnF1MU1IYlRnaFNGTlhjWTktUVE&output=csv&single=true&gid=2',
-  'https://docs.google.com/spreadsheet/pub?key=0AniDuk4-exxodEF5TnF1MU1IYlRnaFNGTlhjWTktUVE&output=csv&single=true&gid=3'
+  'ar.csv',
+  'ks.csv',
+  'co.csv'
 ]
 OUT_PATH = File.expand_path('../../_posts', __FILE__)
 DATE = '2012-01-17'
@@ -49,7 +49,15 @@ CSV_URLS.each do |url|
       puts "#{club['Name']} => #{filename}"
       File.open(file_path, 'w') do |file|
         html = ERB.new(TEMPLATE).result(binding)
-        file.write(html.gsub(/& /, '&amp; '))
+        begin
+          file.write(html.gsub(/& /, '&amp; ').gsub(/\xC2|\xA0/, ''))
+        rescue ArgumentError => e
+          puts "ERROR writing #{file_path}:"
+          puts e.message
+          puts e.backtrace
+          p html
+          exit(1)
+        end
       end
     end
   end
