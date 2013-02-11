@@ -12,7 +12,7 @@ address: 6115 SE US Hwy. 40, Topeka, KS
 state: KS
 directions: 
 caller: 
-contact: (785) 246-3589
+contact: (785) 554-7221
 website: 
 
 

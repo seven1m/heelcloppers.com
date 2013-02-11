@@ -7,12 +7,12 @@ plus: no
 advanced: no
 rounds: no
 schedule: 1st &amp; 3rd Sunday, 7:30 PM
-location: Valentino's South Room
-address: 604 N. 11th Street, Seneca, KS
+location: Valention&#39;s 604 N 11th Street
+address: 1st &amp; 3rd Sun, Seneca, KS
 state: KS
 directions: 
 caller: 
-contact: (785) 336-6644
+contact: (785) 562-3295
 website: 
 
 

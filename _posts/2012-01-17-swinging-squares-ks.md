@@ -12,7 +12,7 @@ address: 6115 SEHwy. 40, Topeka, KS
 state: KS
 directions: 
 caller: 
-contact: (785) 271-5865, (785) 608-7288
+contact: (785) 267-0353
 website: 
 
 

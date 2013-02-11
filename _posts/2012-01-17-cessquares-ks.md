@@ -8,7 +8,7 @@ advanced: no
 rounds: no
 schedule: June &amp; Dec. 1st Saturday, 7:30 PM
 location: Cessna Activity Center
-address: 2744 South George Washington Blvd., Wichita, KS
+address: 2744  South George Washington Blvd., Wichita, KS
 state: KS
 directions: 
 caller: 
