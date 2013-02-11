@@ -7,12 +7,12 @@ plus: yes
 advanced: no
 rounds: no
 schedule: Second &amp; Fourth Saturday, 6:30 PM
-location: Longfellow Elementary School
-address: 8th &amp; H Streets, Salida, CO
+location: The Salida Community Center
+address: 305 F Street,<br>(3rd and F Streets), Salida, CO
 state: CO
 directions: 
 caller: 
-contact: (719) 539-4217, (719) 539-6928
+contact: 
 website: 
 
 

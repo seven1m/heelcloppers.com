@@ -12,7 +12,7 @@ address: 7090 N. Rd 2 E., Monte Vista, CO
 state: CO
 directions: 
 caller: 
-contact: (303) 517-8199, (719) 850-1303, (719) 852-3190
+contact: (719) 852-9849, (303) 517-8199
 website: 
 
 

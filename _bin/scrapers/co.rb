@@ -30,8 +30,6 @@ require 'time'
 require 'open-uri'
 require 'csv'
 require 'nokogiri'
-require 'colorize'
-require 'pp'
 
 clubs = []
 

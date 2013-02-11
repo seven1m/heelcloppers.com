@@ -8,11 +8,11 @@ advanced: no
 rounds: no
 schedule: 1st and 3rd Wednesday
 location: Heather Gardens Community Center
-address: 2888 S Heather Gardens Way, Aurora, CO
+address: 2888 Heather Gardens Way, Aurora, CO
 state: CO
 directions: 
 caller: 
-contact: (303) 751-1811
+contact: (303) 808-7837
 website: http://heathergardens.org
 
 
