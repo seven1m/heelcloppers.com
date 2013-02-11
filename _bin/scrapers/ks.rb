@@ -58,7 +58,7 @@ require 'pp'
 
 class String
   def cleanse
-    gsub(/\xC2|\xA0/, '').gsub(/\xE2\x80(\x99|\x98)/, "'").strip
+    gsub(/\xC2|\xA0/, '').gsub(/\xE2\x80(\x99|\x98)/, "'").strip.gsub(/^\s*,\s*/, '')
   end
 end
 
