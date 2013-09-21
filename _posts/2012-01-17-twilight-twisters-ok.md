@@ -12,7 +12,7 @@ address: Jefferson &amp; Cherokee, Wagoner, OK
 state: OK
 directions: 
 caller: Shane Greer
-contact: (918) 663-3372, (918) 671-0661
+contact: (918) 663-3372
 website: 
 
 

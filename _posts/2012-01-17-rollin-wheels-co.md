@@ -2,7 +2,7 @@
 
 layout: club
 title: Rollin' Wheels
-mainstream: no
+mainstream: yes
 plus: yes
 advanced: no
 rounds: no

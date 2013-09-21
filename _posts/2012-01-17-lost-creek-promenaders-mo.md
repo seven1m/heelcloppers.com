@@ -12,7 +12,7 @@ address: 1017 Carl Sweeney Parkway, Neosho, MO
 state: MO
 directions: 
 caller: Johnny Eubanks &amp; Guest Callers
-contact: (417) 624-9837
+contact: (417) 475-3574
 website: 
 
 

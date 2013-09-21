@@ -12,7 +12,7 @@ address: 104 W. 3rd St., Grove, OK
 state: OK
 directions: 
 caller: Guest Callers
-contact: (918) 786-4163
+contact: (918) 964-1293
 website: 
 
 

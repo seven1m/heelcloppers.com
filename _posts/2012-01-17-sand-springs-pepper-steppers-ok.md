@@ -11,7 +11,7 @@ location: Sand Springs Church Of God
 address: 4th &amp; N. Wilson St., Sand Springs, OK
 state: OK
 directions: 
-caller: Steve Estep &amp; Bill Burcham
+caller: Steve Estep
 contact: (918) 757-2219
 website: http://www.sspeppersteppers.com
 

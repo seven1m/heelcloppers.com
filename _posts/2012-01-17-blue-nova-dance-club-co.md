@@ -2,10 +2,10 @@
 
 layout: club
 title: Blue Nova Dance Club
-mainstream: yes
+mainstream: no
 plus: no
 advanced: no
-rounds: no
+rounds: yes
 schedule: 1st &amp; 3rd Sunday, 2:30 PM
 location: Wheatridge
 address: 3850 High Court, Wheatridge, CO

@@ -3,7 +3,7 @@
 layout: club
 title: Scootbacks
 mainstream: yes
-plus: no
+plus: yes
 advanced: no
 rounds: no
 schedule: 2nd &amp; 4th Friday, 7:30 PM

@@ -6,7 +6,7 @@ mainstream: yes
 plus: yes
 advanced: no
 rounds: no
-schedule: Every Sat., 7:30 AM
+schedule: Every Sat. in summer, 7:30 AM
 location: Lyons Elementary School
 address: 4th &amp; Stickney St., Lyons, CO
 state: CO

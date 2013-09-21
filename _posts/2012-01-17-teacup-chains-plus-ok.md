@@ -11,7 +11,7 @@ location: Wagoner Community Bldg.
 address: Jefferson &amp; Cherokee, Wagoner, OK
 state: OK
 directions: 
-caller: Shane Greer &amp; Guest Callers
+caller: Shane Greer
 contact: (918) 457-0141
 website: 
 
