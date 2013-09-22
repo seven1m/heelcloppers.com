@@ -12,7 +12,7 @@ address: 2 Riordan Drive, Bella Vista, AR
 state: AR
 directions: 
 caller: John Eubanks
-contact: (479) 885-7503
+contact: (479) 876-8432
 website: 
 
 

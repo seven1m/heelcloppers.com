@@ -11,7 +11,7 @@ location: Judsonia Community Center
 address: 601 Judson Street, Judsonia, AR
 state: AR
 directions: 
-caller: Curt Davis
+caller: Lieutentant Colonel Philip D. Morehouse
 contact: (501) 724-3930
 website: 
 

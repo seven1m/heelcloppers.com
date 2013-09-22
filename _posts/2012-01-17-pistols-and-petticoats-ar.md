@@ -11,8 +11,8 @@ location: St. Paul United Methodist Church
 address: 2201 South Culberhouse, Jonesboro, AR
 state: AR
 directions: 
-caller: John Williams
-contact: (870) 761-8076
+caller: John and Ruth Williams (2nd, 4th, and 5th Thursday; Jerry and Juliann Hill, 1st and 3rd Thursdays)
+contact: (870) 932-7740
 website: 
 
 

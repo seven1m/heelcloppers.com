@@ -12,7 +12,7 @@ address: 6300 Trinity Drive, Pine Bluff, AR, Pine Bluff, AR
 state: AR
 directions: 
 caller: Elgie Goss
-contact: (870) 575-2446
+contact: (870) 879-1675
 website: 
 
 

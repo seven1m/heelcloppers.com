@@ -12,7 +12,7 @@ address: 4135 NW 10th St., Oklahoma City, OK
 state: OK
 directions: 
 caller: Jerry Stover
-contact: (580) 357-9368
+contact: (405) 789-7480
 website: http://kalicokapers.org/
 
 

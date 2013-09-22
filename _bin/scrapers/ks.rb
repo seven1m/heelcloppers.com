@@ -91,8 +91,8 @@ clubs = open(URL).read.scan(/<div[^>]*>[^<]*<font.*?>([^<]+)/i).map do |club|
     if time = club[0].scan(/(\d+(:\d+)?\s*(am|pm))/i).map(&:first).first
       time = Time.parse(time).strftime('%H:%M')
     end
-    location = data[2].cleanse
-    address = (data[3] + ', ' + data[1] + ', KS').cleanse
+    location = data[2].cleanse rescue nil
+    address = (data[3] + ', ' + data[1] + ', KS').cleanse rescue nil
     caller = nil
     contacts = club[0].scan(/(\d{3})[\) \-]+(\d{3}).(\d{4})/).map { |m| "(#{m[0]}) #{m[1]}-#{m[2]}" }.join(', ')
     if club[0] =~ /www\.?[a-z0-9\-]+\.(com|org|net|us)/

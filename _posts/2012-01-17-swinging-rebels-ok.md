@@ -12,7 +12,7 @@ address: 4301 N Ann Arbor, Warr Acres, OK
 state: OK
 directions: 
 caller: Cecil Burton
-contact: (405) 470-0868
+contact: (405) 340-6364
 website: http://swingingrebels.com/
 
 

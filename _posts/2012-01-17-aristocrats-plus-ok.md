@@ -12,7 +12,7 @@ address: 700 N Air Depot, Midwest City, OK
 state: OK
 directions: 
 caller: Jim Howard
-contact: (405) 691-7698
+contact: (405) 348-9017
 website: 
 
 
