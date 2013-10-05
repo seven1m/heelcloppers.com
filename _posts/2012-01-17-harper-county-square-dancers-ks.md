@@ -7,8 +7,8 @@ plus: no
 advanced: no
 rounds: no
 schedule: 3rd Sunday, 2:30 PM
-location: American Legion
-address: Washington &amp; 10th Street, Harper, KS
+location: 3rd Sun.
+address: 2:30 PM, (check schedule or call for location), KS
 state: KS
 directions: 
 caller: 

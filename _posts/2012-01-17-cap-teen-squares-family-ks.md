@@ -12,7 +12,7 @@ address: Sardou &amp; Chester, Topeka, KS
 state: KS
 directions: 
 caller: 
-contact: (786) 266-8339
+contact: (785) 969-1214
 website: 
 
 

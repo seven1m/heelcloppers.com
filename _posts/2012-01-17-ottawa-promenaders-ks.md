@@ -12,8 +12,8 @@ address: 1230 Ash, Ottawa, KS
 state: KS
 directions: 
 caller: 
-contact: (785) 242-6734, (785) 893-4322
-website: http://www.ottawapromenaders.com
+contact: (785) 242-5509
+website: 
 
 
 

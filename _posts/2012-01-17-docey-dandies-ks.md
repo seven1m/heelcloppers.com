@@ -12,7 +12,7 @@ address: Fairgrounds, Gardner, KS
 state: KS
 directions: 
 caller: 
-contact: (913) 449-1922
+contact: (913) 592-3850
 website: 
 
 

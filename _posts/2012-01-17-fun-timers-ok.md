@@ -12,7 +12,8 @@ address: 8251 E Reno, Midwest City, OK
 state: OK
 directions: 
 caller: Bob Thomas
-contact: (405) 641-0305
+contact: (405) 390-8326
+
 website: 
 
 

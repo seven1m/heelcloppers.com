@@ -8,11 +8,11 @@ advanced: no
 rounds: no
 schedule: third Saturday, 7:30 PM
 location: 4-H Senior Citizens Building
-address: 1107 South Spring Valley Road, Junction City, KS
+address: 1107 South Spring Valley Rd., Junction City, KS
 state: KS
 directions: 
 caller: 
-contact: (785) 564-0188, (785) 410-8007
+contact: 
 website: 
 
 

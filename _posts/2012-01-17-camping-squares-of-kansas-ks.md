@@ -12,7 +12,7 @@ address: 7:30 PM, Camping Sites, KS
 state: KS
 directions: 
 caller: 
-contact: (316) 943-4137
+contact: (316) 323-3205
 website: 
 
 

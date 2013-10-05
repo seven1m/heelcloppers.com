@@ -12,7 +12,7 @@ address: Campus West, Lawrence, KS
 state: KS
 directions: 
 caller: 
-contact: (785) 842-6025
+contact: (913) 796-6784
 website: 
 
 

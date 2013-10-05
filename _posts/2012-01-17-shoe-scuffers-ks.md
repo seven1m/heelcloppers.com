@@ -12,7 +12,7 @@ address: 100 North Ridge Road, Hesston, KS
 state: KS
 directions: 
 caller: 
-contact: (620) 241-3425, (620) 245-2455
+contact: 
 website: 
 
 

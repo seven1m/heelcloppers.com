@@ -1,14 +1,14 @@
 ---
 
 layout: club
-title: Bluestem Swingers
+title: Advanced Workshop
 mainstream: yes
 plus: no
 advanced: no
 rounds: no
-schedule: 2nd &amp; 4th Saturday, 7:30 PM
-location: Senior Center
-address: 603 East 12th Avenue, Emporia, KS
+schedule: 
+location: Kaw ValleyDoug Gregg &amp; Frannie Coble
+address: P. O. Box 1306, (Advanced program) Topeka, KS
 state: KS
 directions: 
 caller: 

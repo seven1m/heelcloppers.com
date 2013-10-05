@@ -12,7 +12,7 @@ address: 8th &amp; Kearney, Atchison, KS
 state: KS
 directions: 
 caller: 
-contact: (816) 364-6683
+contact: (913) 774-7459
 website: 
 
 

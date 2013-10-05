@@ -13,7 +13,7 @@ state: KS
 directions: 
 caller: 
 contact: (316) 670-0098
-website: 
+website: http://www.kssquaredancing.com
 
 
 

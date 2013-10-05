@@ -12,7 +12,7 @@ address: 1st &amp; 3rd Sun, Seneca, KS
 state: KS
 directions: 
 caller: 
-contact: (785) 562-3295
+contact: (785) 562-3295, (785) 713-1367
 website: 
 
 

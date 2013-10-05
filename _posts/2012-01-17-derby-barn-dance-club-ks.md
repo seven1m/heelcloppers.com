@@ -1,18 +1,18 @@
 ---
 
 layout: club
-title: Village Steppers
+title: Derby Barn Dance Club
 mainstream: yes
 plus: no
 advanced: no
 rounds: no
-schedule: 2nd &amp; 4th Saturday, 7:30 PM
+schedule: 1st Saturdayurday of the month, 6:30 PM
 location: Oaklawn Activity Center
-address: 4904 S Cliffton, Wichita, KS
+address: 4904 South Clifton, Wichita, KS
 state: KS
 directions: 
 caller: 
-contact: (316) 219-0100, (316) 721-6718
+contact: (316) 841-2357
 website: 
 
 

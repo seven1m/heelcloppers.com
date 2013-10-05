@@ -12,7 +12,7 @@ address: 400 East Avenue E, Hutchinson, KS
 state: KS
 directions: 
 caller: 
-contact: (316) 283-6652
+contact: (620) 585-2115, (620) 727-2157
 website: 
 
 
