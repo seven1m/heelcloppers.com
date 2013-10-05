@@ -6,7 +6,7 @@ mainstream: yes
 plus: no
 advanced: no
 rounds: no
-schedule: 
+schedule: Dance Schedule Unknown
 location: various-see schedule
 address: 
 state: CO

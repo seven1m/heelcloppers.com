@@ -6,7 +6,7 @@ mainstream: yes
 plus: no
 advanced: no
 rounds: no
-schedule: 
+schedule: Dance Schedule Unknown
 location: Moab Civic Center
 address: 182 N 500 W, Moab, UT
 state: UT

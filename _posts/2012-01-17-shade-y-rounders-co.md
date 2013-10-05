@@ -6,7 +6,7 @@ mainstream: no
 plus: no
 advanced: no
 rounds: yes
-schedule: 
+schedule: Dance Schedule Unknown
 location: Westminster Grange
 address: 3935 W. 73rd Ave, Westminster, CO
 state: CO

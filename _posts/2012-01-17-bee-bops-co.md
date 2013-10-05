@@ -6,7 +6,7 @@ mainstream: no
 plus: no
 advanced: yes
 rounds: no
-schedule: 
+schedule: Dance Schedule Unknown
 location: The Hayloft
 address: 2950 W. Mississippi Ave, Denver, CO
 state: CO

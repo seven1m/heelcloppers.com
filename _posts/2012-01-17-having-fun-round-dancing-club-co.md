@@ -6,7 +6,7 @@ mainstream: no
 plus: no
 advanced: no
 rounds: yes
-schedule: 
+schedule: Dance Schedule Unknown
 location: The 'Barn'
 address: 619 4th Street, Berthound, CO
 state: CO

@@ -6,7 +6,7 @@ mainstream: yes
 plus: no
 advanced: no
 rounds: no
-schedule: 
+schedule: Dance Schedule Unknown
 location: Glenn's Den
 address: 10178 Empire Dr, Lafayette, CO
 state: CO

@@ -6,7 +6,7 @@ mainstream: yes
 plus: yes
 advanced: no
 rounds: no
-schedule: 
+schedule: Dance Schedule Unknown
 location: PLPOA Clubhouse
 address: 230 Port Avenue, Pagosa Springs, CO
 state: CO

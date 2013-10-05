@@ -6,7 +6,7 @@ mainstream: yes
 plus: no
 advanced: no
 rounds: no
-schedule: 
+schedule: Dance Schedule Unknown
 location: Masonic Hall
 address: 2400 Consistory Ct., Grand Junction, CO
 state: CO

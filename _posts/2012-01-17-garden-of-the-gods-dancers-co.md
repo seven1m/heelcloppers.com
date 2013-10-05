@@ -6,7 +6,7 @@ mainstream: yes
 plus: no
 advanced: no
 rounds: no
-schedule: 
+schedule: Dance Schedule Unknown
 location: Milo &amp; Grace's
 address: 629 Arnold Lane, Colorado Springs, CO
 state: CO

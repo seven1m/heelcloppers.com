@@ -6,7 +6,7 @@ mainstream: yes
 plus: yes
 advanced: no
 rounds: no
-schedule: 
+schedule: Dance Schedule Unknown
 location: Aspen Park Community Center
 address: 26215 Sutton Road, Aspen Park, CO
 state: CO

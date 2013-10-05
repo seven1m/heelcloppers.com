@@ -6,7 +6,7 @@ mainstream: yes
 plus: no
 advanced: no
 rounds: no
-schedule: 
+schedule: Dance Schedule Unknown
 location: Wheat Ridge Grange
 address: 3850 High Court, Wheat Ridge, CO
 state: CO

@@ -6,7 +6,7 @@ mainstream: no
 plus: no
 advanced: no
 rounds: yes
-schedule: 
+schedule: Dance Schedule Unknown
 location: The Outpost
 address: 10101 E. Colorado Ave, Denver, CO
 state: CO

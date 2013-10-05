@@ -6,7 +6,7 @@ mainstream: yes
 plus: no
 advanced: no
 rounds: no
-schedule: 
+schedule: Dance Schedule Unknown
 location: The Carriage Stop
 address: 2700 Robinson, Colorado Springs, CO
 state: CO

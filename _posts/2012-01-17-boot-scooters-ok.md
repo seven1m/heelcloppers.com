@@ -6,7 +6,7 @@ mainstream: yes
 plus: yes
 advanced: no
 rounds: no
-schedule: 
+schedule: Dance Schedule Unknown
 location: United Methodist Church
 address: 618 N. Delaware, Dewey, OK
 state: OK

@@ -24,7 +24,7 @@ mainstream: <%= club['M'] %>
 plus: <%= club['P'] %>
 advanced: <%= club['A'] %>
 rounds: <%= club['R'] %>
-schedule: <%= club['Schedule'] %><% if club['Time'] %>,<%= Time.parse(club['Time']).strftime(' %I:%M %p').sub(/^ 0/, ' ') %><% end %>
+schedule: <% if club['Schedule'] %><%= club['Schedule'] %><% if club['Time'] %>,<%= Time.parse(club['Time']).strftime(' %I:%M %p').sub(/^ 0/, ' ') %><% end %><% else %>Dance Schedule Unknown<% end %>
 location: <%= club['Location'] %>
 address: <%= club['Address'] %>
 state: <%= club['State'] %>

@@ -6,7 +6,7 @@ mainstream: yes
 plus: no
 advanced: no
 rounds: no
-schedule: 
+schedule: Dance Schedule Unknown
 location: Enterprise Community Hall
 address: 1477 19 Road, Fruita, CO
 state: CO

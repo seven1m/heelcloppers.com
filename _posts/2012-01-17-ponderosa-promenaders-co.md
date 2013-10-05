@@ -6,7 +6,7 @@ mainstream: yes
 plus: no
 advanced: no
 rounds: no
-schedule: 
+schedule: Dance Schedule Unknown
 location: Livermore Community Hall
 address: Red Feather Lakes Road , 1994 County Road 74E, Livermore, CO
 state: CO

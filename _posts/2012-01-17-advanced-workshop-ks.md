@@ -6,7 +6,7 @@ mainstream: yes
 plus: no
 advanced: no
 rounds: no
-schedule: 
+schedule: Dance Schedule Unknown
 location: Kaw ValleyDoug Gregg &amp; Frannie Coble
 address: P. O. Box 1306, (Advanced program) Topeka, KS
 state: KS

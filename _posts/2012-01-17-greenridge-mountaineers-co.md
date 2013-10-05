@@ -6,7 +6,7 @@ mainstream: yes
 plus: no
 advanced: no
 rounds: no
-schedule: 
+schedule: Dance Schedule Unknown
 location: Legion Hall
 address: 1420 Ogden Street #103, Denver, CO
 state: CO
