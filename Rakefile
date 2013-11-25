@@ -19,7 +19,7 @@ end
 
 desc 'Build and deploy'
 task :deploy => :build do
-  sh "rsync -azh --progress --delete _site/* tim@timmorgan.org:/var/www/heelcloppers.com/"
+  sh "rsync -azh --progress --delete _site/* heelcloppers.com:/var/www/statics/heelcloppers.com/"
 end
 
 desc 'Check links for site already running on localhost:4000'
