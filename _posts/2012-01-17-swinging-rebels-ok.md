@@ -13,7 +13,7 @@ state: OK
 directions: 
 caller: Cecil Burton
 contact: (405) 340-6364
-website: http://swingingrebels.com/
+website: http://www.swingingrebelsokc.org/
 
 
 
