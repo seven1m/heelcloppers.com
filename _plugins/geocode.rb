@@ -8,8 +8,8 @@ GEO_CACHE = JSON.parse(File.exist?(GEO_CACHE_PATH) ? File.read(GEO_CACHE_PATH) :
 module Jekyll
   class Post
     alias_method :to_liquid_without_geocoding, :to_liquid
-    def to_liquid
-      to_liquid_without_geocoding.tap do |data|
+    def to_liquid(*args)
+      to_liquid_without_geocoding(*args).tap do |data|
         addr = data['address'].gsub(/&amp;/, '&') rescue nil # unencode
         if addr and not data['lat']
           loc = GEO_CACHE[addr]
