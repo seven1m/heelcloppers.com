@@ -6,7 +6,7 @@ mainstream: yes
 plus: yes
 advanced: no
 rounds: no
-schedule: every other Thursday, 7:30 PM
+schedule: 1st &amp; 3rd Thursday, 7:30 PM
 location: Memorial Community Center
 address: 8310 E. 15th St., Tulsa, OK
 state: OK
