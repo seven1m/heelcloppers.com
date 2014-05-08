@@ -6,8 +6,8 @@ mainstream: no
 plus: yes
 advanced: no
 rounds: no
-schedule: 2nd &amp; 4th Wednesday, 9:00 PM
-location: Facilities Dept / Bus Barn
+schedule: 2nd &amp; 4th Wednesday, 7:00 PM
+location: D-11 Facilities Dept / Bus Barn
 address: 5240 Geiger Blvd., Colorado Springs, CO
 state: CO
 directions: 
