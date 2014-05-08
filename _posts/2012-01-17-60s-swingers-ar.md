@@ -11,7 +11,7 @@ location: Bess Chisum Stephens Center For Youth And Families
 address: 12th and Cleveland, Little Rock, AR
 state: AR
 directions: 
-caller: Bill Wilder
+caller: Bill Strawn
 contact: (501) 666-8568
 website: 
 

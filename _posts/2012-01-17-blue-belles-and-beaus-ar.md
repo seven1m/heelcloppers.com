@@ -6,7 +6,7 @@ mainstream: no
 plus: yes
 advanced: no
 rounds: no
-schedule: 2nd, 4th &amp; 5th Thursday, 7:00 PM
+schedule: every Thursday, 7:00 PM
 location: Judsonia Community Center
 address: 601 Judson Street, Judsonia, AR
 state: AR

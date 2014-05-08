@@ -11,8 +11,8 @@ location: Floral Fire Station
 address: Floral, AR
 state: AR
 directions: 
-caller: Guest Callers
-contact: (870) 926-2442
+caller: Jimmy Green
+contact: (501) 345-2025, (870) 834-5362
 website: 
 
 
