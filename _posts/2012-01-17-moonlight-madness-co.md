@@ -6,7 +6,7 @@ mainstream: no
 plus: yes
 advanced: no
 rounds: no
-schedule: 2nd, 4th &amp; 5th Friday, 7:30 AM
+schedule: 2nd, 4th &amp; 5th Friday, 7:30 PM
 location: Wheat Ridge Grange
 address: 3850 High Court, Wheat Ridge, CO
 state: CO

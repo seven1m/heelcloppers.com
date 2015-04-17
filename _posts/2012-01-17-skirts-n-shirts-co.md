@@ -6,7 +6,7 @@ mainstream: yes
 plus: yes
 advanced: no
 rounds: no
-schedule: second Friday, 7:15 AM
+schedule: second Friday, 7:15 PM
 location: Wiggins Elementary Gym
 address: 320 Chapman St, Wiggins, CO
 state: CO

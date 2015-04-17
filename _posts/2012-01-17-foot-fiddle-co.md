@@ -6,7 +6,7 @@ mainstream: yes
 plus: yes
 advanced: no
 rounds: no
-schedule: 1st &amp; 3rd Saturday, 7:30 AM
+schedule: 1st &amp; 3rd Saturday, 7:30 PM
 location: Mtn. Range Shadows Clbh
 address: 8401 Mummy Range Dr, Loveland, CO
 state: CO

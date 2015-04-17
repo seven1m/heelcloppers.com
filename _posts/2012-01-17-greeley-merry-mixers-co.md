@@ -6,7 +6,7 @@ mainstream: yes
 plus: yes
 advanced: no
 rounds: no
-schedule: 2nd &amp; 4th Saturday, 7:30 AM
+schedule: 2nd &amp; 4th Saturday, 7:30 PM
 location: The Senior Center
 address: 1010 6th St., Greeley, CO
 state: CO

@@ -7,7 +7,7 @@ plus: no
 advanced: no
 rounds: no
 schedule: Dance Schedule Unknown
-location: Milo &amp; Grace's
+location: Milo &amp; Grace Ferry's
 address: 629 Arnold Lane, Colorado Springs, CO
 state: CO
 directions: 

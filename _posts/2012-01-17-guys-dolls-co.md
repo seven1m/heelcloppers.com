@@ -6,7 +6,7 @@ mainstream: yes
 plus: yes
 advanced: no
 rounds: no
-schedule: 3rd Sunday, 4:00 AM
+schedule: 3rd Sunday, 4:00 PM
 location: Vets Club
 address: 
 state: CO
