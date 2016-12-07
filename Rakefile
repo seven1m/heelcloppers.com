@@ -57,9 +57,9 @@ def cleanup
 end
 
 def jekyll(opts = '')
-  sh 'jekyll ' + opts
+  sh 'bundle exec jekyll ' + opts
 end
 
 def compass(opts = '')
-  sh 'compass compile -c config.rb --force ' + opts
+  sh 'bundle exec compass compile -c config.rb --force ' + opts
 end
