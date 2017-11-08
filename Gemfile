@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'jekyll'
+gem 'jekyll', '~> 1.5.1'
 gem 'rdiscount'
 gem 'sass'
 gem 'compass'
