@@ -6,13 +6,13 @@ mainstream: no
 plus: no
 advanced: no
 rounds: yes
-schedule: 1st &amp; 3rd Sunday, 2:30 PM
-location: Wheatridge
-address: 3850 High Court, Wheatridge, CO
+schedule: Every Tuesday, 6:30 PM
+location: Glenn's Den
+address: 10178 Empire Dr, Lafayetta, CO
 state: CO
 directions: 
 caller: 
-contact: (303) 578-6588, (303) 880-6337
+contact: (303) 578-6588, (303) 915-2981
 website: http://www.bluenovadance.com/
 
 
