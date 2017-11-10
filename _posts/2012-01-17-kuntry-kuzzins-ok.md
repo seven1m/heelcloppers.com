@@ -6,9 +6,9 @@ mainstream: yes
 plus: yes
 advanced: no
 rounds: no
-schedule: 2nd &amp; 4th Saturday, 7:30 PM
-location: First Methodist Church Gym
-address: S. College Ave &amp; W. Delaware St, Tahlequah, OK
+schedule: 1st &amp; 3rd Saturday, 7:30 PM
+location: First Methodist Church gym
+address: SW corner of W. Delaware St &amp; N. Cherokee Ave, Tahlequah, OK
 state: OK
 directions: 
 caller: Bob Loyd

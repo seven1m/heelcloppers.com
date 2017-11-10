@@ -6,13 +6,13 @@ mainstream: yes
 plus: yes
 advanced: no
 rounds: no
-schedule: 1st &amp; 3rd Friday, 7:30 PM
+schedule: 1st &amp; 3rd Saturday, 10:00 PM
 location: Eisenhower School
-address: 501 Spruce St., Independence, KS
+address: 501 Spruce St. (South door), Independence, KS
 state: KS
 directions: 
-caller: Richard Verge &amp; B. Main
-contact: (620) 421-5822, (620) 332-9239
+caller: Richard Verge/Bruce Main
+contact: (620) 421-5822
 website: 
 
 

@@ -11,7 +11,7 @@ location: Neosho Senior Center
 address: 1017 Carl Sweeney Parkway, Neosho, MO
 state: MO
 directions: 
-caller: Johnny Eubanks &amp; Guest Callers
+caller: Johnny Eubanks and Guest Callers
 contact: (417) 475-3574
 website: 
 

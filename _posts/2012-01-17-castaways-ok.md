@@ -6,13 +6,13 @@ mainstream: no
 plus: no
 advanced: yes
 rounds: no
-schedule: 1st &amp; 3rd Sunday, 6:00 PM
-location: Hill's Hall
-address: 4917 E. Admiral Blvd., Tulsa, OK
+schedule: 1st &amp; 3rd Wednesday, 7:00 PM
+location: American Legion Hall (Mohawk Post 308)
+address: 11328 East Admiral Place, Tulsa, OK
 state: OK
 directions: 
 caller: Lee Main
-contact: (918) 449-9425
+contact: (918) 286-4914
 website: 
 
 
