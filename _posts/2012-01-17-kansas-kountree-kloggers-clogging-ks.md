@@ -11,8 +11,8 @@ location: Kiwanis Park
 address: 5105 W. 2nd Street, Wichita, KS
 state: KS
 directions: 
-caller: 
-contact: (316) 254-0997
+caller: Joe Dawley, CCI
+contact: (316) 259-4283
 website: 
 
 
