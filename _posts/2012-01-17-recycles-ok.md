@@ -11,7 +11,7 @@ location: George Horn Hall
 address: 8310 E. 15th Street, Tulsa, OK
 state: OK
 directions: 
-caller: Monty Hackler, Mike McHenry, Bob Rollins
+caller: Monty Hackler, Mike McHenry
 contact: (918) 272-3113
 website: 
 

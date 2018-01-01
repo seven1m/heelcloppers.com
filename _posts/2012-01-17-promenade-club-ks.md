@@ -11,7 +11,7 @@ location: Eisenhower School
 address: 501 Spruce St. (South door), Independence, KS
 state: KS
 directions: 
-caller: Richard Verge/Bruce Main
+caller: Bruce Main and Guest Callers
 contact: (620) 421-5822
 website: 
 

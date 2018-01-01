@@ -21,6 +21,7 @@ clubs.map! do |string|
   location = dashes.grep(/, OK|, AR|, KS|, MO|Tulsa/).first.split(/\s*;\s*/).grep(/, OK|, AR|, KS|, MO|Tulsa/).first rescue ''
   location.gsub!(/Tulsa/, 'Tulsa, OK') unless location =~ /, OK|, AR|, KS|, MO/
   website = string.match(/\w\w\w\.[a-z\.\-]+/).to_s
+  callers = string.split(/\s*;\s*/).grep(/caller/i)[0].sub(/\s*,\s*Callers?/, '').strip rescue ''
   {
     name: dashes.first.gsub(/[A-Z]+/) { |m| "#{m[0]}#{m[1..-1].downcase}" },
     mainstream: styles.include?('M'),
@@ -34,15 +35,12 @@ clubs.map! do |string|
     schedule: string.split(/\s*;\s*/).grep(/Sun|Mon|Tue|Wed|Thu|Fri|Sat/)[0].split(/\(/).first,
     time: string.match(/\d+:\d+ (AM|PM)/)[0],
     contacts: string.scan(/\(\d{3}\) \d{3}\-\d{4}/).join(', '),
-    caller: string.split(/\s*;\s*/).grep(/caller/i)[0].sub(/\s*,\s*Callers?/, '').strip,
+    caller: callers,
     website: website != '' ? "http://#{website}" : nil,
     string: string,
     location_str: location
   }
 end
-
-require 'pp'
-pp clubs.detect { |c| c[:name] == 'Lost Creek Promenaders' }
 
 CSV.open('neosda.csv', 'w') do |csv|
   csv << %w(Name M P A R Location Address State Directions Lat Lng Schedule Time Contact Caller Website Status)
