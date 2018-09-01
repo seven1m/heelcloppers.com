@@ -3,11 +3,11 @@
 layout: club
 title: Gunnison Gorge Dancers
 mainstream: yes
-plus: no
+plus: yes
 advanced: no
 rounds: no
-schedule: 2nd &amp; 4th Sunday
-location: Cunnison Community Center
+schedule: 1st and 3rd Sunday
+location: Gunnison Community Center
 address: 200 Spencer, Gunnison, CO
 state: CO
 directions: 
