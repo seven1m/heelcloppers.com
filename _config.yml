@@ -1,7 +1,6 @@
 # standard jekyll configuration
 
 permalink: "/clubs/:title.html"
-pygments: true
 exclude: ['Rakefile', 'README.md', 'config.rb', 'Gemfile', 'Gemfile.lock', 'jekyll_geocache.json']
 markdown: rdiscount
 domain: heelcloppers.com

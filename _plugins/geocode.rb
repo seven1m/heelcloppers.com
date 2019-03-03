@@ -6,7 +6,7 @@ GEO_CACHE_PATH = File.expand_path('../../jekyll_geocache.json', __FILE__)
 GEO_CACHE = JSON.parse(File.exist?(GEO_CACHE_PATH) ? File.read(GEO_CACHE_PATH) : '{}')
 
 module Jekyll
-  class Post
+  class Document
     alias_method :to_liquid_without_geocoding, :to_liquid
     def to_liquid(*args)
       to_liquid_without_geocoding(*args).tap do |data|
